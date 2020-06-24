@@ -5,9 +5,11 @@
 		src="https://raw.githubusercontent.com/thelounge/thelounge/master/client/img/logo-vertical-transparent-bg.svg?sanitize=true">
 </h1>
 
+
 <h3 align="center">
 	Modern web IRC client designed for self-hosting
 </h3>
+
 
 <p align="center">
 	<strong>
