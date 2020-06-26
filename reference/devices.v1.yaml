@@ -406,9 +406,6 @@ paths:
                 $ref: ../models/error.v1.yaml
     parameters:
       - $ref: '#/components/parameters/accountid'
-  '/api/devices/{accountid}/{spaceid}':
-    get:
-      operationId: ''
 components:
   schemas: {}
   parameters:
