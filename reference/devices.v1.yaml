@@ -407,9 +407,11 @@ paths:
         required: true
         description: unique per account (see `'My Account'` for more information)
     head:
-      summary: ''
+      summary: Head APIS
       operationId: head-api-devices-accountid
       description: Does this device exist?
+      tags:
+        - devices
 components:
   schemas: {}
   parameters:
@@ -525,3 +527,4 @@ tags:
     description: relative to devices and the 'internet of things'
     externalDocs:
       url: 'https://cloudhome.io/api/tags/IOT'
+  - name: devices
