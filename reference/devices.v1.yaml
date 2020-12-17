@@ -162,6 +162,12 @@ paths:
         - $ref: '#/components/parameters/sort'
         - $ref: '#/components/parameters/limit'
         - $ref: '#/components/parameters/deviceid'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties: {}
     post:
       summary: newDevice
       tags:

@@ -51,5 +51,49 @@
   "required": [
     "accountID",
     "adminID"
-  ]
+  ],
+  "x-examples": {
+    "example-1": {
+      "accountID": "string",
+      "accountName": "string",
+      "adminID": "string",
+      "createdOn": "string",
+      "userCount": 0,
+      "deviceCount": 0,
+      "locationCount": 0,
+      "accountStorage": 0,
+      "accountStorageUsed": 0,
+      "vpnEnabled": true,
+      "dateCreated": "2017-07-21T17:32:28Z",
+      "dateUpdated": "2017-07-21T17:32:28Z"
+    },
+    "example-2": {
+      "accountID": "string",
+      "accountName": "string",
+      "adminID": "string",
+      "createdOn": "string",
+      "userCount": 0,
+      "deviceCount": 0,
+      "locationCount": 0,
+      "accountStorage": 0,
+      "accountStorageUsed": 0,
+      "vpnEnabled": true,
+      "dateCreated": "2017-07-21T17:32:28Z",
+      "dateUpdated": "2017-07-21T17:32:28Z"
+    },
+    "example-3": {
+      "accountID": "string",
+      "accountName": "string",
+      "adminID": "string",
+      "createdOn": "string",
+      "userCount": 0,
+      "deviceCount": 0,
+      "locationCount": 0,
+      "accountStorage": 0,
+      "accountStorageUsed": 0,
+      "vpnEnabled": true,
+      "dateCreated": "2017-07-21T17:32:28Z",
+      "dateUpdated": "2017-07-21T17:32:28Z"
+    }
+  }
 }
