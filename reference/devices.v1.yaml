@@ -408,6 +408,41 @@ paths:
         in: path
         required: true
         description: unique per account (see `'My Account'` for more information)
+  /api/users/:
+    post:
+      summary: Create User
+      tags:
+        - users
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  userID:
+                    type: string
+                  devices:
+                    $ref: ../models/device.v1.json
+      operationId: post-api-users
+      description: Some description
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                first_name:
+                  type: string
+                last_name:
+                  type: string
+            examples:
+              example-1:
+                value:
+                  first_name: string
+                  last_name: string
+        description: ''
 components:
   schemas: {}
   parameters:
