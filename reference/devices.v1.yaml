@@ -408,6 +408,13 @@ paths:
         in: path
         required: true
         description: unique per account (see `'My Account'` for more information)
+  /api/health/:
+    get:
+      summary: Heartbeat monitor
+      tags:
+        - health
+      responses: {}
+      operationId: get-api-health
 components:
   schemas: {}
   parameters:
