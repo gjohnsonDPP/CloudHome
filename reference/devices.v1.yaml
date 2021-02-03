@@ -415,6 +415,40 @@ paths:
         - health
       responses: {}
       operationId: get-api-health
+  /test/:
+    get:
+      summary: Test Healthcheck
+      tags:
+        - test
+      responses:
+        '200':
+          description: OK
+          content:
+            application/xml:
+              schema:
+                type: object
+                properties:
+                  exampleString:
+                    type: string
+                    deprecated: true
+      operationId: get-test
+      description: 'Endpoint descriptions, **markdown**'
+      parameters:
+        - schema:
+            type: string
+            format: uuid
+          in: header
+          name: x-tracking
+        - schema:
+            type: string
+            enum:
+              - bar
+              - buzz
+              - baz
+          in: query
+          name: foo
+          description: Only use `foo` sparingly
+      deprecated: true
 components:
   schemas: {}
   parameters:

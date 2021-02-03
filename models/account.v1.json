@@ -5,9 +5,36 @@
   "x-tags": [
     "IOT"
   ],
+  "x-examples": {
+    "example-1": {
+      "accountID": "3dfff852-927d-47e8-822c-2fffc57ff6b9",
+      "accountName": "string",
+      "adminID": "string",
+      "createdOn": "string",
+      "userCount": 0,
+      "deviceCount": 0,
+      "locationCount": 0,
+      "accountStorage": 0,
+      "accountStorageUsed": 0,
+      "vpnEnabled": true,
+      "dateCreated": "2017-07-21T17:32:28Z",
+      "dateUpdated": "2017-07-21T17:32:28Z",
+      "user": {
+        "userID": "string",
+        "userName": "string",
+        "isAdmin": true,
+        "locationID": "string",
+        "locationName": "string",
+        "deviceCount": 0,
+        "dateCreated": "2017-07-21T17:32:28Z",
+        "dateUpdated": "2017-07-21T17:32:28Z"
+      }
+    }
+  },
   "properties": {
     "accountID": {
-      "type": "string"
+      "type": "string",
+      "format": "uuid"
     },
     "accountName": {
       "type": "string"
