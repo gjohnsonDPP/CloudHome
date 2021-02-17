@@ -408,6 +408,18 @@ paths:
         in: path
         required: true
         description: unique per account (see `'My Account'` for more information)
+  /users/:
+    post:
+      summary: Create new users
+      tags:
+        - devices
+      responses: {}
+      operationId: post-users
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: ../models/user.v1.json
 components:
   schemas: {}
   parameters:
