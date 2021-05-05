@@ -1,0 +1,57 @@
+{
+  "$id": "http://www.example.com/stoplight/AllOfIssue.v1.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AllOf Issue",
+  "type": "object",
+  "description": "Object to show the issue with Inclusion of allOf",
+  "definitions": {
+    "AllOfObject": {
+      "title": "AllOf Object",
+      "type": "object",
+      "description": "Object with AllOf inside.",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "propertyInAllOfObject": {
+              "title": "property in AllOfObject",
+              "type": "string",
+              "description": "Property to be beside the one included bu allOf"
+            }
+          }
+        },
+        {
+          "$ref": "#/definitions/IncludedObject"
+        }
+      ]
+    },
+    "IncludedObject": {
+      "title": "Included Object",
+      "type": "object",
+      "description": "Object to be included with allOf",
+      "properties": {
+        "includedProperty": {
+          "title": "included Property",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "properties": {
+    "id": {
+      "title": "identifies",
+      "type": "string",
+      "description": "An Identifier."
+    },
+    "objectsWithAllOf": {
+      "title": "objects with AllOf",
+      "type": "array",
+      "description": "objects with allOf",
+      "items": [
+        {
+          "$ref": "#/definitions/AllOfObject"
+        }
+      ]
+    }
+  }
+}
