@@ -403,7 +403,7 @@ paths:
     parameters:
       - schema:
           type: string
-          example: jetsonsFutureHomeTest
+          example: jetsonsFutureHome
         name: accountid
         in: path
         required: true
