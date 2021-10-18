@@ -1,3 +1,6 @@
+- name: GitTools
+  uses: GitTools/actions@v0.9.10
+
 openapi: 3.0.0
 info:
   title: Devices
